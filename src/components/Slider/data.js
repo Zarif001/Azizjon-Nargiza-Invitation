@@ -1,10 +1,11 @@
 import desert from  '/images/desert.png'
 import wed from  '/images/wed.png'
 import statue from '/images/statue.png'
+import moon from '/images/moon.png'
 export const DATES = [
     {
         id: 1,
-        img: wed
+        img: moon
     },
     {
         id: 2,
@@ -12,10 +13,10 @@ export const DATES = [
     },
     {
         id: 3,
-        img: wed
+        img: desert
     },
     {
         id: 4,
-        img: statue
+        img: wed
     }
 ]
