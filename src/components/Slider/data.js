@@ -10,14 +10,14 @@ export const DATES = [
     },
     {
         id: 2,
-        img: statue
+        img: wed
     },
     {
         id: 3,
-        img: desert
+        img: moon
     },
     {
         id: 4,
-        img: wed
+        img: statue
     }
 ]

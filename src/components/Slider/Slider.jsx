@@ -9,11 +9,13 @@ export default function SimpleSlider() {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 6000
   };
   const textAnimation = {
     initial: { x: -1000, opacity: 0 },
