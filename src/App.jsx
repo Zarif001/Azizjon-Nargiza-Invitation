@@ -35,8 +35,11 @@ function App() {
   };
 
   return (
-    <div className="h-screen max-w-4xl">
-      <button onClick={toggleMusic} className="absolute top-4 right-4 bg-blue-500 text-white p-2 rounded">
+    <div className="h-screen max-w-4xl relative">
+      <button 
+        onClick={toggleMusic} 
+        className="fixed top-4 right-4 bg-blue-500 text-white p-2 rounded z-10"
+      >
         {isPlaying ? "Отключить музыку" : "Включить музыку"}
       </button>
       <SimpleSlider />
