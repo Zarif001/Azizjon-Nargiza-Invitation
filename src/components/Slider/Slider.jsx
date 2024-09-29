@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { DATES } from "./data";
+import {motion} from 'framer-motion' 
 
 export default function SimpleSlider() {
   var settings = {
@@ -14,30 +15,40 @@ export default function SimpleSlider() {
     fade: true,
     arrows: false,
   };
+  const textAnimation = {
+    initial: { x: -1000, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+    exit: { x: 100, opacity: 0 },
+    transition: { duration: 2 },
+  };
+  const bgAnimation = {
+    initial: {y: -1000, opacity: 0},
+    animate: {y: 0, opacity: 1},
+    transition: {duration: 1}
+  }
 
   return (
-    <div className="relative w-full">
+    <motion.div {...bgAnimation} className="relative w-full">
       <Slider {...settings} className="w-full h-screen">
         {DATES.map((item) => (
           <div key={item.id} className="relative h-screen w-full">
             <img className="w-full h-full object-cover" src={item.img} alt="" />
-            <div className="absolute inset-0  bg-black bg-opacity-20 flex flex-col justify-center items-center">
-              <div className="flex items-center">
+            <div  className="absolute inset-0  bg-black bg-opacity-20 flex flex-col justify-center items-center">
+              <motion.div {...textAnimation} className="flex items-center">
                 <p className="text-m font-vibes text-white mr-5 text-center">Приглашаем вас</p>
               <h1 className="text-white text-xl mb-20 font-SpringBI  text-center flex justify-center items-center">
                 A <span className="m-0 pt-16">N</span>
               </h1>
-              <p className="text-m font-vibes text-white ml-5 text-center">На нашу свадьбу</p>
-              </div>
+              <motionp className="text-m font-vibes text-white ml-5 text-center">На нашу свадьбу</motionp>
+              </motion.div>
             
-              <p className="text-white text-lg font-SpringBI leading-none text-center">
-                {" "}
+              <motion.p {...textAnimation} className="text-white text-lg font-SpringBI leading-none text-center">
                 Azizjon vs Nargiza
-              </p>
+              </motion.p>
             </div>
           </div>
         ))}
       </Slider>
-    </div>
+    </motion.div>
   );
 }
