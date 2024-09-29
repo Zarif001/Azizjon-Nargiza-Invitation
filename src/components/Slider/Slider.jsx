@@ -19,12 +19,12 @@ export default function SimpleSlider() {
     initial: { x: -1000, opacity: 0 },
     animate: { x: 0, opacity: 1 },
     exit: { x: 100, opacity: 0 },
-    transition: { duration: 2 },
+    transition: { duration: 3 },
   };
   const bgAnimation = {
     initial: { opacity: 0},
     animate: { opacity: 1},
-    transition: {duration: 1}
+    transition: {duration: 2}
   }
 
   return (
@@ -39,7 +39,7 @@ export default function SimpleSlider() {
               <h1 className="text-white text-xl mb-20 font-SpringBI  text-center flex justify-center items-center">
                 A <span className="m-0 pt-16">N</span>
               </h1>
-              <motionp className="text-m font-vibes text-white ml-5 text-center">На нашу свадьбу</motionp>
+              <p className="text-m font-vibes text-white ml-5 text-center">На нашу свадьбу</p>
               </motion.div>
             
               <motion.p {...textAnimation} className="text-white text-lg font-SpringBI leading-none text-center">
