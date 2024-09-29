@@ -14,11 +14,11 @@ export default function SimpleSlider() {
     slidesToScroll: 1,
     fade: true,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 6000
   };
   const textAnimation = {
-    initial: { x: -1000, opacity: 0 },
+    initial: { x: -100, opacity: 0 },
     animate: { x: 0, opacity: 1 },
     exit: { x: 100, opacity: 0 },
     transition: { duration: 3 },
