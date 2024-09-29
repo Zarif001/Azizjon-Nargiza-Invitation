@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Spring-Regular';
+    src: url('./Fontspring-DEMO-theseasons-reg.otf') format('truetype');
+  }
+@font-face {
+    font-family: 'Spring-Bold';
+    src: url('./Fontspring-DEMO-theseasons-bd.otf') format('truetype');
+  }
+@font-face {
+    font-family: 'Spring-BoldItalic';
+    src: url('./Fontspring-DEMO-theseasons-bdit.otf') format('truetype');
+  }
+@font-face {
+    font-family: 'Spring-Italic';
+    src: url('./Fontspring-DEMO-theseasons-it.otf') format('truetype');
+  }
+@font-face {
+    font-family: 'Spring-LightItalic';
+    src: url('./Fontspring-DEMO-theseasons-ltit.otf') format('truetype');
+  }

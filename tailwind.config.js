@@ -4,12 +4,17 @@ export default {
   theme: {
     fontSize: {
       sm: ["14px", "20px"],
-      base: ["16px", "24px"],
-      lg: ["44px", "28px"],
-      xl: ["72px", "32px"],
+      m: ["24px", "24px"],
+      lg: ["44px", "36px"],
+      xl: ["56px", "44px"],
     },
     fontFamily: {
-      'vibes' : "Great Vibes"
+      'vibes' : "Great Vibes",
+      'SpringR' : "Spring-Regular",
+      'SpringB' : 'Spring-Bold',
+      'SpringBI': 'Spring-BoldItalic',
+      'SpringI' : 'Spring-Italic',
+      'SpringLI': 'Spring-LightItalic' 
     }
   },
   plugins: [],
