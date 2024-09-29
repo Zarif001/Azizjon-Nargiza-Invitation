@@ -28,10 +28,10 @@ const CountdownTimer = () => {
   return (
     <div>
       <div className="flex mt-10 w-[270px] p-2">
-        <span className="text-sm font-vibes">{timeLeft.days || "00"} <br /> дн. </span>
-        <span className="text-sm font-vibes">{timeLeft.hours || "00"} <br /> ч. </span>
-        <span className="text-sm font-vibes">{timeLeft.minutes || "00"} <br /> мин. </span>
-        <span className="text-sm font-vibes">{timeLeft.seconds || "00"} <br /> сек.</span>
+        <span className="text-m font-vibes">{timeLeft.days || "00"} <br /> дн. </span>
+        <span className="text-m font-vibes">{timeLeft.hours || "00"} <br /> ч. </span>
+        <span className="text-m font-vibes">{timeLeft.minutes || "00"} <br /> мин. </span>
+        <span className="text-m font-vibes">{timeLeft.seconds || "00"} <br /> сек.</span>
       </div>
     </div>
   );

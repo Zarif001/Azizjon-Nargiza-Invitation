@@ -4,7 +4,7 @@ export default function Timer() {
   return (
     <div className="bg-slate-100 pt-10 ">
         <img src="/images/flower.png" alt="flower" className="w-[100px]" />
-      <h2 className="font-vibes text-m text-center">Церемония брако сочетания состоится</h2>
+      <h2 className="font-vibes text-llg text-center">Церемония брако сочетания состоится</h2>
       <div className="flex items-center justify-around mt-[30px]">
         <p className="text-sm font-vibes w-[150px] text-center">
           7 ноября - Navkar & Fotixa Toy , 12:00 место: Загородный дом, Oltin
