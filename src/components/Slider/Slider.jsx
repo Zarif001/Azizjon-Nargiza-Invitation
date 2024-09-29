@@ -14,7 +14,7 @@ export default function SimpleSlider() {
     slidesToScroll: 1,
     fade: true,
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 6000
   };
   const textAnimation = {
