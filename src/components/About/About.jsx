@@ -2,7 +2,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="bg-slate-100 pt-24">
-      <div className="grid grid-cols-2 items-center">
+      <div className="grid grid-cols-2 items-center h-[300px] md:h-auto">
         <h2 className="">Something</h2>
         <img className='w-full h-full object-cover'src="/images/bg.png" alt="picture" />
       </div>
