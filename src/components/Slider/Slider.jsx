@@ -14,8 +14,8 @@ export default function SimpleSlider() {
     slidesToScroll: 1,
     fade: true,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 6000
+    // autoplay: true,
+    // autoplaySpeed: 6000
   };
   const textAnimation = {
     initial: { x: -100, opacity: 0 },
@@ -24,10 +24,11 @@ export default function SimpleSlider() {
     transition: { duration: 3 },
   };
   const bgAnimation = {
-    initial: { opacity: 0},
-    animate: { opacity: 1},
-    transition: {duration: 2}
+    initial: {opacity: 0},
+    animate: {opacity: 1},
+    transition: 1
   }
+
 
   return (
     <motion.div {...bgAnimation} className="relative w-full">

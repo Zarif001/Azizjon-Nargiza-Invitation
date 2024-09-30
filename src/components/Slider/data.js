@@ -1,8 +1,6 @@
-import desert from  '/images/desert.png'
-import wed from  '/images/wed.png'
-import statue from '/images/statue.png'
-import moon from '/images/moon.png'
 import bg from '/images/bg.png'
+import bg1 from '/images/image1.png'
+import bg2 from '/images/image2.png'
 export const DATES = [
     {
         id: 1,
@@ -10,14 +8,14 @@ export const DATES = [
     },
     {
         id: 2,
-        img: wed
+        img: bg1
     },
     {
         id: 3,
-        img: moon
+        img: bg2
     },
     {
         id: 4,
-        img: statue
+        img: bg
     }
 ]
