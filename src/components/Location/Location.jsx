@@ -1,49 +1,35 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import AnimatedSection from "../Animation/Animation";
 
 export default function Location() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,  
-    threshold: 0.1,     
-  });
-
-  React.useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
   const textVariants = {
-    hidden: { opacity: 0, x: -100 },  
-    visible: { opacity: 1, x: 0, transition: { duration: 1 } }, 
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
   return (
     <div className="pt-32 bg-slate-100 flex flex-col items-center">
-      <motion.h2
-        className="text-llg font-vibes mb-10"
-        ref={ref}               
-        initial="hidden"         
-        animate={controls}       
-        variants={textVariants} 
-      >
-        Как добраться?
-      </motion.h2>
+      <AnimatedSection animation={textVariants}>
+        <h2
+          className="text-llg font-vibes mb-10"
+        >
+          Как добраться?
+        </h2>
+      </AnimatedSection>
+      <AnimatedSection animation={textVariants}>
+        <p
+          className="text-m font-vibes text-center w-full md:w-[500px]"
+        >
+          Для вашего удобства мы подготовили карту. <br /> Надеемся, что вы
+          легко найдете место проведения свадьбы и порадуете нас своим
+          присутствием!
+        </p>
+      </AnimatedSection>
 
-      <motion.p
-        className="text-m font-vibes text-center w-full md:w-[500px]"
-        initial="hidden"
-        animate={controls}
-        variants={textVariants}
+      <div
+        className="mt-20 w-full"
+        style={{ position: "relative", overflow: "hidden" }}
       >
-        Для вашего удобства мы подготовили карту. <br /> Надеемся, что вы легко
-        найдете место проведения свадьбы и порадуете нас своим присутствием!
-      </motion.p>
-
-      {/* Карта */}
-      <div className="mt-20 w-full" style={{ position: "relative", overflow: "hidden" }}>
         <a
           href="https://yandex.uz/maps/org/120468512829/?utm_medium=mapframe&utm_source=maps"
           style={{ color: "#eee", fontSize: 12, position: "absolute", top: 0 }}

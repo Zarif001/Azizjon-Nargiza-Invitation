@@ -1,32 +1,17 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import CountTimer from "./CountTimer";
+import AnimatedSection from "../Animation/Animation";
 export default function Timer() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
-  React.useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
   const textVariant = {
-    hidden: { opacity: 0, y: -100 },
+    hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
   return (
-    <motion.div
+    <AnimatedSection
+    animation={textVariant}
       className="bg-slate-100 pt-10 "
-      initial="hidden"
-      animate={controls}
-      ref={ref}
-      variants={textVariant}
+      
     >
       <img src="/images/flower.png" alt="flower" className="w-[100px]" />
       <h2 className="font-vibes text-llg text-center">
@@ -42,6 +27,6 @@ export default function Timer() {
         </p>
       </div>
       <CountTimer />
-    </motion.div>
+    </AnimatedSection>
   );
 }
