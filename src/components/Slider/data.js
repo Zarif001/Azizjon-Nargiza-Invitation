@@ -1,6 +1,4 @@
-import bg from '/images/bg.png'
-import bg1 from '/images/image1.png'
-import bg2 from '/images/image2.png'
+import bg from '/images/1.webp'
 export const DATES = [
     {
         id: 1,
@@ -8,11 +6,11 @@ export const DATES = [
     },
     {
         id: 2,
-        img: bg1
+        img: bg
     },
     {
         id: 3,
-        img: bg2
+        img: bg
     },
     {
         id: 4,
