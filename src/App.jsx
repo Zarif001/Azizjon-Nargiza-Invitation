@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import BackgroundMusic from "./components/BackgroundMusic/BackgroundMusic"; 
 import Location from "./components/Location/Location";
 import Form from "./components/Form/Form";
+import WeddingOrganizer from "./components/Organizator/Organizator";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Location/>
       <Form/>
+      <WeddingOrganizer/>
     </div>
   );
 }

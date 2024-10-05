@@ -18,7 +18,7 @@ export default function Timer() {
       </h2>
       <div className="flex items-center justify-around   mt-[30px]">
         <p className="text-ssm font-vibes text-center whitespace-nowrap mr-2">
-        7 ноября - Navkar & Fotixa Toy, в 12:00 <br /> место: Загородный дом, Oltin
+        7 ноября - Navkar & Fotixa Toy в 12:00 <br /> место: Загородный дом, Oltin
           Sarin 8,<br /> Gazalkent 
         </p> 
         <p className="text-ssm font-vibes text-center whitespace-nowrap ">

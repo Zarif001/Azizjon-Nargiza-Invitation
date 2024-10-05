@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 export default function Form() {
+  const [name, setName] = useState('');
   const [attendance, setAttendance] = useState('');
   const [alcoholPreference, setAlcoholPreference] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -12,6 +13,7 @@ export default function Form() {
     event.preventDefault();
 
     const message = `
+      Имя и Фамилия: ${name}
       Присутствие: ${attendance}
       Предпочтения в алкоголе: ${alcoholPreference}
     `;
@@ -39,13 +41,21 @@ export default function Form() {
     <div className="flex flex-col justify-center items-center pt-20 bg-slate-100">
       <div className="text-center font-vibes mb-6">
         <h1 className='text-llg mb-5'>Анкета Гостей</h1>
-        <p className='w-[250px]'>Мы очень старались сделать праздник незабываемым, поэтому будем рады, если вы подтвердите свое присутствие до <br /> 20 октября 2024 года</p>
+        <p className='w-[300px] text-m'>Мы очень старались сделать праздник незабываемым, поэтому будем рады, если вы подтвердите свое присутствие до <br /> <span className='underline'>20 октября 2024 года</span></p>
       </div>
 
       <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 font-vibes">
-        <h2 className="text-2xl font-bold mb-4">Подтвердите свое присутствие</h2>
+        <label className="block text-gray-700 text-m font-bold mb-2">Имя и Фамилия:</label>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className="mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          placeholder="Введите имя и фамилию"
+          required
+        />
 
-        <label className="block text-gray-700 text-sm font-bold mb-2">1. Подтвердите ваше присутствие:</label>
+        <label className="block text-gray-700 text-sm font-bold mb-2">1. Подтвердите свое присутствие:</label>
         <div className="mb-4">
           <label className="block">
             <input
@@ -101,14 +111,15 @@ export default function Form() {
             />{' '}
             Вино
           </label>
-          <label className="block">
+          <label className="block ">
             <input
               type="radio"
               name="alcoholPreference"
               value="Крепкий алкоголь"
               checked={alcoholPreference === 'Крепкий алкоголь'}
               onChange={(e) => setAlcoholPreference(e.target.value)}
-            />{' '}
+            />
+            
             Крепкий алкоголь
           </label>
           <label className="block">
@@ -125,7 +136,7 @@ export default function Form() {
 
         <button
           type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
           Отправить
         </button>

@@ -19,7 +19,7 @@ export default function BackgroundMusic() {
   return (
     <button 
       onClick={toggleMusic} 
-      className="fixed top-4 right-4 bg-blue-500 text-white p-2 rounded z-10"
+      className="fixed top-4 right-4 bg-orange-400 hover:bg-orange-500 text-white p-2 rounded z-10"
     >
       {isPlaying ? "Отключить музыку" : "Включить музыку"}
     </button>
