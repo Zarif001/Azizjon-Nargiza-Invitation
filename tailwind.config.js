@@ -18,6 +18,9 @@ export default {
       'SpringBI': 'Spring-BoldItalic',
       'SpringI' : 'Spring-Italic',
       'SpringLI': 'Spring-LightItalic' 
+    },
+    backgroundColor: {
+      'ps': '#caa776'
     }
   },
   plugins: [],

@@ -10,7 +10,7 @@ export default function Timer() {
   return (
     <AnimatedSection
     animation={textVariant}
-      className="bg-slate-100 pt-10 "
+      className="bg-ps pt-10 "
       
     >
       <h2 className="font-vibes text-llg text-center">

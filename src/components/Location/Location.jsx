@@ -8,21 +8,19 @@ export default function Location() {
   };
 
   return (
-    <div className="pt-32 bg-slate-100 flex flex-col items-center">
+    <div className="pt-32 bg-ps flex flex-col items-center">
       <AnimatedSection animation={textVariants}>
         <h2
           className="text-llg font-vibes mb-10"
         >
-          Как добраться?
+          Как добраться до ресторана
         </h2>
       </AnimatedSection>
       <AnimatedSection animation={textVariants}>
         <p
           className="text-m font-vibes text-center w-full md:w-[500px]"
         >
-          Для вашего удобства мы подготовили карту. <br /> Надеемся, что вы
-          легко найдете место проведения свадьбы и порадуете нас своим
-          присутствием!
+          Для вашего удобства мы подготовили карту. <br /> Друзьям невесты подготовлен свадебный кортеж, на котором они прибудут в ресторан 
         </p>
       </AnimatedSection>
 

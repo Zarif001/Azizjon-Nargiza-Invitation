@@ -11,7 +11,7 @@ export default function About() {
   };
 
   return (
-    <div className="bg-slate-100 pt-24">
+    <div className="bg-ps pt-24">
       <AnimatedSection
         animation={textRight}
         className="grid grid-cols-2 items-center h-[350px]"
@@ -31,7 +31,7 @@ export default function About() {
         </p>
         <img
           className="w-full h-[350px] object-cover"
-          src="/images/1.webp"
+          src="/images/7.png"
           alt="picture"
         />
       </AnimatedSection>
@@ -42,7 +42,7 @@ export default function About() {
       >
         <img
           className="w-full h-[350px] object-cover"
-          src="/images/1.webp"
+          src="/images/10.png"
           alt="picture-1"
         />
         <p className="text-sm font-vibes text-center">
@@ -65,11 +65,11 @@ export default function About() {
         </p>
       </AnimatedSection>
       <AnimatedSection>
-        <div className="mt-10 flex flex-col justify-center items-center">
-          <h2 className="text-llg font-vibes mb-10">Как добраться?</h2>
+        <div className="mt-10 flex flex-col justify-center items-center mb-5">
+          <h2 className="text-llg font-vibes mb-10">Как добраться до загородного дома</h2>
           <p className="text-m font-vibes text-center w-full md:w-[500px] mb-5">
             Для вашего удобства мы подготовили карту. <br /> Надеемся, что вы
-            легко найдете место проведения свадьбы и порадуете нас своим
+            легко найдете место проведения помолвки и порадуете нас своим
             присутствием!
           </p>
           <div className="w-full" style={{ position: "relative", overflow: "hidden" }}>
@@ -98,7 +98,7 @@ export default function About() {
             <iframe className="md:w-[600px] w-full h-[400px]"
               src="https://yandex.uz/map-widget/v1/?ll=69.770275%2C41.567090&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1MDUzNTEwOTE2ElFPyrt6YmVraXN0b24sIFRvc2hrZW50IHZpbG95YXRpLCBCb8q7c3RvbmxpcSB0dW1hbmksIEfKu2F6YWxrZW50LCB1bGl0c2EgR2FnYXJpbmEiCg0_iotCFd9EJkI%2C&z=17.56"
               frameBorder={1}
-              allowFullScreen="true"
+              allowFullScreen={true}
               style={{ position: "relative" }}
             />
           </div>
@@ -122,7 +122,7 @@ export default function About() {
         </p>
         <img
           className="w-full h-[350px] object-cover"
-          src="/images/1.webp"
+          src="/images/5.png"
           alt="picture-2"
         />
       </AnimatedSection>
@@ -132,7 +132,7 @@ export default function About() {
       >
         <img
           className="w-full h-[350px] object-cover"
-          src="/images/1.webp"
+          src="/images/6.png"
           alt="picture-1"
         />
         <p className="text-sm font-vibes text-center">
