@@ -19,9 +19,6 @@ export default {
       'SpringI' : 'Spring-Italic',
       'SpringLI': 'Spring-LightItalic' 
     },
-    backgroundColor: {
-      'ps': '#caa776'
-    }
   },
   plugins: [],
 };

@@ -8,7 +8,7 @@ export default function Location() {
   };
 
   return (
-    <div className="pt-32 bg-ps flex flex-col items-center">
+    <div className="pt-32 bg-slate-100 flex flex-col items-center">
       <AnimatedSection animation={textVariants}>
         <h2
           className="text-llg font-vibes mb-10"

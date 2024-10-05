@@ -1,5 +1,20 @@
 import AnimatedSection from "../Animation/Animation";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export default function About() {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 6000
+  };
   const textRight = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
@@ -11,7 +26,7 @@ export default function About() {
   };
 
   return (
-    <div className="bg-ps pt-24">
+    <div className="bg-slate-100 pt-24">
       <AnimatedSection
         animation={textRight}
         className="grid grid-cols-2 items-center h-[350px]"
@@ -29,11 +44,24 @@ export default function About() {
           <br /> 16:00 национальные танцы,
           <br /> продолжение банкета <br />
         </p>
-        <img
+        <div className="w-full">
+    <Slider {...settings}>
+      <div className="w-full">
+      <img
           className="w-full h-[350px] object-cover"
-          src="/images/7.png"
-          alt="picture"
+          src="/images/10.png"
+          alt="picture-1"
         />
+      </div>
+      <div className="w-full">
+      <img
+          className="w-full h-[350px] object-cover"
+          src="/images/9.png"
+          alt="picture-1"
+        />
+      </div>
+    </Slider>
+  </div>
       </AnimatedSection>
 
       <AnimatedSection
@@ -122,7 +150,7 @@ export default function About() {
         </p>
         <img
           className="w-full h-[350px] object-cover"
-          src="/images/5.png"
+          src="/images/13.png"
           alt="picture-2"
         />
       </AnimatedSection>
