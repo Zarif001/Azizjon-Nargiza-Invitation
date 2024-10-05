@@ -178,7 +178,7 @@ export default function About() {
         />
         <p className="text-sm font-vibes text-center">
           {" "}
-          <span className="text-m mb-[1px] block ">
+          <span className="text-m mb-[1px] block mt-[5px] ">
             <b>
               Dress Code: <br />
               Black Tie
@@ -192,7 +192,7 @@ export default function About() {
           Длинные вечерние платья и костюмы, выбор ткани может варьироваться:черный и коричневый. Но главное сохранить изысанность и элегатность 
           <br />
           <b>Джентельмены:</b> <br /> Классический костюм/строгий образ в черном
-          или в темно-синем цвете.{" "}
+          или в темно-сине  м цвете.{" "}
         </p>
       </AnimatedSection>
     </div>
