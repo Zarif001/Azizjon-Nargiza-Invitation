@@ -16,7 +16,7 @@ export default function Timer() {
       <h2 className="font-vibes text-llg text-center">
         Мы будем ради видеть вас
       </h2>
-      <div className="flex items-center justify-between mt-[30px]">
+      <div className="flex items-center justify-around   mt-[30px]">
         <p className="text-ssm font-vibes text-center whitespace-nowrap mr-2">
         7 ноября - Navkar & Fotixa Toy, в 12:00 <br /> место: Загородный дом, Oltin
           Sarin 8,<br /> Gazalkent 
