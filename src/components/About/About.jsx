@@ -49,16 +49,16 @@ export default function About() {
       <div className="w-full">
       <img
           className="w-full h-[350px] object-cover"
-          src="/images/10.png"
+          src="/images/9.png"
           alt="picture-1"
-        />
+        />  
       </div>
       <div className="w-full">
       <img
           className="w-full h-[350px] object-cover"
-          src="/images/9.png"
+          src="/images/11.png"
           alt="picture-1"
-        />
+        />  
       </div>
     </Slider>
   </div>
@@ -148,11 +148,24 @@ export default function About() {
           <br /> 13:00 - 16:00 - фотосессия в "InterContinental" г.Ташкент{" "}
           <br /> 17:00 - Сбор гостей в ресторане "Osiyo Grand" <br />
         </p>
-        <img
+        <div className="w-full">
+    <Slider {...settings}>
+      <div className="w-full">
+      <img
           className="w-full h-[350px] object-cover"
           src="/images/13.png"
-          alt="picture-2"
-        />
+          alt="picture-1"
+        />  
+      </div>
+      <div className="w-full">
+      <img
+          className="w-full h-[350px] object-cover"
+          src="/images/5.png"
+          alt="picture-1"
+        />  
+      </div>
+    </Slider>
+  </div>
       </AnimatedSection>
       <AnimatedSection
         animation={textLeft}
