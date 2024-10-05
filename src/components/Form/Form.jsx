@@ -65,11 +65,11 @@ export default function Form() {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="text-sm mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           placeholder="Введите имя и фамилию"
           required
         />
-        <label className="block text-gray-700 text-sm font-bold mb-2">
+        <label className="block text-gray-700 text-m font-bold mb-2">
           1. Подтвердите свое присутствие:
         </label>
         <div className="mb-4">
@@ -85,7 +85,7 @@ export default function Form() {
             <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
-            <span className="text-gray-700 ml-2">Обязательно буду</span>
+            <span className="text-gray-700 ml-2 text-sm">Обязательно буду</span>
           </label>
 
           <label className=" flex items-center">
@@ -100,7 +100,7 @@ export default function Form() {
             <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
-            <span className="text-gray-700 ml-2">Еще не уверен(а)</span>
+            <span className="text-gray-700 ml-2 text-sm">Еще не уверен(а)</span>
           </label>
 
           <label className=" flex items-center">
@@ -115,13 +115,13 @@ export default function Form() {
             <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
-            <span className="text-gray-700 ml-2">
+            <span className="text-gray-700 ml-2 text-sm">
               К сожалению, у меня не получится
             </span>
           </label>
         </div>
 
-        <label className="block text-gray-700 text-sm font-bold mb-2">
+        <label className="block text-gray-700 text-m font-bold mb-2">
           2. Предпочтения в алкоголе:
         </label>
         <div className="mb-4">
@@ -137,7 +137,7 @@ export default function Form() {
             <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
-            <span className="text-gray-700 ml-2">Шампанское</span>
+            <span className="text-gray-700 ml-2 text-sm">Шампанское</span>
           </label>
 
           <label className=" flex items-center">
@@ -152,7 +152,7 @@ export default function Form() {
             <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
-            <span className="text-gray-700 ml-2">Вино</span>
+            <span className="text-gray-700 ml-2 text-sm">Вино</span>
           </label>
 
           <label className=" flex items-center">
@@ -167,7 +167,7 @@ export default function Form() {
             <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
-            <span className="text-gray-700 ml-2">Крепкий алкоголь</span>
+            <span className="text-gray-700 ml-2 text-sm">Крепкий алкоголь</span>
           </label>
 
           <label className=" flex items-center">
@@ -182,7 +182,7 @@ export default function Form() {
             <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
-            <span className="text-gray-700 ml-2">Б/а напитки</span>
+            <span className="text-gray-700 ml-2 text-sm">Б/а напитки</span>
           </label>
         </div>
 
@@ -194,20 +194,20 @@ export default function Form() {
           type="text"
           value={comments}
           onChange={(e) => setComments(e.target.value)}
-          className="mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className=" text-sm mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           placeholder="Ваши пожелания"
           required
         />
 
         <button
           type="submit"
-          className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="text-m bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
           Отправить
         </button>
 
         {isSubmitted && (
-          <p className="text-green-500 mt-4">Форма успешно отправлена!</p>
+          <p className="text-green-500 mt-4 text-sm">Форма успешно отправлена!</p>
         )}
       </form>
     </div>
