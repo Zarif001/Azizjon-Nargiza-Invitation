@@ -13,10 +13,10 @@ export default function About() {
   return (
     <div className="bg-slate-100 pt-24">
       <AnimatedSection animation={textRight} className="grid grid-cols-2 items-center h-[350px]" >
-        <h2 className="">Something</h2>
+        <p className="text-sm font-vibes text-center"> <span className="text-m mb-[1px] block ">Navkar and Fotixa Toy</span>  <br /> <br /> <span className="text-m">Тайминг</span> <br />12:00 - Начало помолвки, <br />обмен дарами, <br />14:00 - Приветсвие невесты <br />с мамой жениха, <br />15:00 "Домод Салом" приветствие жениха с родственниками невесты, <br /> 16:00 национальные танцы,<br />  продолжение банкета <br /> <span className="underline">Dress Code: свободный </span></p> 
         <img
           className="w-full h-[350px] object-cover"
-          src="/images/bg.png"
+          src="/images/1.webp"
           alt="picture"
         />
       </AnimatedSection>
@@ -24,16 +24,17 @@ export default function About() {
       <AnimatedSection animation={textLeft} className="grid grid-cols-2 items-center h-[350px]">
         <img
           className="w-full h-[350px] object-cover"
-          src="/images/image1.png"
+          src="/images/1.webp"
           alt="picture-1"
         />
-        <h2>Something</h2>
+        <h2>somethin</h2>
+            
       </AnimatedSection>
       <AnimatedSection animation={textRight} className="grid grid-cols-2 items-center h-[350px]">
-        <h2>Something</h2>
+      <p className="text-sm font-vibes text-center"> <span className="text-m mb-[1px] block ">Свадебное торжество </span>  <br /> <br /> <span className="text-m">Тайминг</span> <br />10:00 - Сбор в загородном доме невесты,  <br /> 10:30 - Прибытие свадебного кортежа  <br />11:30 - Церемония прощания невесты с семьей<br /> 13:00 - 16:00 - фотосессия в "InterContinental" г.Ташкент <br /> 17:00 - Сбор гостей в ресторане "Osiyo Grand"  <br /> <span className="underline">Dress Code: Вечерний </span></p>
         <img
           className="w-full h-[350px] object-cover"
-          src="/images/image2.png"
+          src="/images/1.webp"
           alt="picture-2"
         />
       </AnimatedSection>

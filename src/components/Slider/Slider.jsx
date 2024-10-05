@@ -47,8 +47,8 @@ export default function SimpleSlider() {
                 Azizjon <span className="font-vibes">&</span> Nargiza
               </motion.p>
               <div className="mt-5 flex ">
-              <p className="text-m font-vibes text-white mr-5 text-center">Приглашаем вас</p>
-              <p className="text-m font-vibes text-white ml-5 text-center">На нашу свадьбу</p>
+              <p className="text-m font-vibes text-white text-center">Приглашаем вас</p>
+              <p className="text-m font-vibes text-white ml-1 text-center">на нашу свадьбу</p>
               </div>
             </div>
           </div>

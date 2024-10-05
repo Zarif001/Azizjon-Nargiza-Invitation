@@ -13,17 +13,16 @@ export default function Timer() {
       className="bg-slate-100 pt-10 "
       
     >
-      <img src="/images/flower.png" alt="flower" className="w-[100px]" />
       <h2 className="font-vibes text-llg text-center">
-        Церемония брако сочетания состоится
+        Мы будем ради видеть вас
       </h2>
-      <div className="flex items-center justify-around mt-[30px]">
-        <p className="text-sm font-vibes w-[150px] text-center">
-          7 ноября - Navkar & Fotixa Toy , 12:00 место: Загородный дом, Oltin
-          Sarin 8, Gazalkent
-        </p>
-        <p className="text-sm font-vibes w-[150px] text-center">
-          9 ноября - свадебное торжество, 17:00 место: Osiyo Grand Restaurant
+      <div className="flex items-center justify-between mt-[30px]">
+        <p className="text-ssm font-vibes text-center whitespace-nowrap mr-2">
+        7 ноября - Navkar & Fotixa Toy, в 12:00 <br /> место: Загородный дом, Oltin
+          Sarin 8,<br /> Gazalkent 
+        </p> 
+        <p className="text-ssm font-vibes text-center whitespace-nowrap ">
+          9 ноября - свадебное торжество  в 17:00 <br /> место: Osiyo Grand Restaurant, <br />Tashkent
         </p>
       </div>
       <CountTimer />
