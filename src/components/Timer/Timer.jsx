@@ -14,7 +14,7 @@ export default function Timer() {
       
     >
       <h2 className="font-vibes text-llg text-center">
-        Мы будем ради видеть вас
+        Мы будем рады видеть вас
       </h2>
       <div className="flex items-center justify-around   mt-[30px]">
         <p className="text-ssm font-vibes text-center whitespace-nowrap mr-2">
