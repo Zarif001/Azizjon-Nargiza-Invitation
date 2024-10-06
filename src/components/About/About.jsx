@@ -13,7 +13,7 @@ export default function About() {
     fade: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 6000
+    autoplaySpeed: 6000,
   };
   const textRight = {
     hidden: { opacity: 0, x: -100 },
@@ -45,23 +45,23 @@ export default function About() {
           <br /> продолжение банкета <br />
         </p>
         <div className="w-full">
-    <Slider {...settings}>
-      <div className="w-full">
-      <img
-          className="w-full h-[350px] object-cover"
-          src="/images/9.png"
-          alt="picture-1"
-        />  
-      </div>
-      <div className="w-full">
-      <img
-          className="w-full h-[350px] object-cover"
-          src="/images/11.png"
-          alt="picture-1"
-        />  
-      </div>
-    </Slider>
-  </div>
+          <Slider {...settings}>
+            <div className="w-full">
+              <img
+                className="w-full h-[350px] object-cover"
+                src="/images/9.png"
+                alt="picture-1"
+              />
+            </div>
+            <div className="w-full">
+              <img
+                className="w-full h-[350px] object-cover"
+                src="/images/11.png"
+                alt="picture-1"
+              />
+            </div>
+          </Slider>
+        </div>
       </AnimatedSection>
 
       <AnimatedSection
@@ -80,8 +80,14 @@ export default function About() {
               Dress Code: <br />
               Arabian Cocktail{" "}
             </b>
-          </span>{" "}
-          <br />{" "}
+          </span>
+          <div className="flex justify-center items-center mt-2 mb-2">
+            <span className="w-[30px] h-[30px] bg-slate-700 rounded-full m-0"></span>
+            <span className="w-[30px] h-[30px] bg-pink-400 rounded-full m-0 ml-2"></span>
+            <span className="w-[30px] h-[30px] bg-yellow-600 rounded-full ml-2 mr-2"></span>
+            <span className="w-[30px] h-[30px] bg-orange-500 rounded-full m-0"></span>
+            <span className="w-[30px] h-[30px] bg-green-900 rounded-full m-0 ml-2"></span>
+          </div>
           <span className="text-sm">
             Мы будем рады, если вы поддержите тематику помолвки
           </span>{" "}
@@ -94,13 +100,18 @@ export default function About() {
       </AnimatedSection>
       <AnimatedSection>
         <div className="mt-10 flex flex-col justify-center items-center mb-5">
-          <h2 className="text-llg font-vibes mb-10">Как добраться до загородного дома</h2>
+          <h2 className="text-llg font-vibes mb-10">
+            Как добраться до загородного дома
+          </h2>
           <p className="text-m font-vibes text-center w-full md:w-[500px] mb-5">
             Для вашего удобства мы подготовили карту. <br /> Надеемся, что вы
             легко найдете место проведения помолвки и порадуете нас своим
             присутствием!
           </p>
-          <div className="w-full" style={{ position: "relative", overflow: "hidden" }}>
+          <div
+            className="w-full"
+            style={{ position: "relative", overflow: "hidden" }}
+          >
             <a
               href="https://yandex.uz/maps/101726/gazalkent/?utm_medium=mapframe&utm_source=maps"
               style={{
@@ -123,7 +134,8 @@ export default function About() {
             >
               Улица Гагарина — Яндекс&nbsp;Карты
             </a>
-            <iframe className="md:w-[600px] w-full h-[400px]"
+            <iframe
+              className="md:w-[600px] w-full h-[400px]"
               src="https://yandex.uz/map-widget/v1/?ll=69.770275%2C41.567090&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1MDUzNTEwOTE2ElFPyrt6YmVraXN0b24sIFRvc2hrZW50IHZpbG95YXRpLCBCb8q7c3RvbmxpcSB0dW1hbmksIEfKu2F6YWxrZW50LCB1bGl0c2EgR2FnYXJpbmEiCg0_iotCFd9EJkI%2C&z=17.56"
               frameBorder={1}
               allowFullScreen={true}
@@ -143,29 +155,30 @@ export default function About() {
           </span>{" "}
           <br /> <span className="text-m font-bold">Тайминг</span> <br />
           10:00 - Сбор в загородном доме невесты; <br /> 10:30 - Прибытие
-          свадебного кортежа;<br />
+          свадебного кортежа;
+          <br />
           11:30 - Церемония прощания невесты с семьей;
           <br /> 13:00 - 16:00 - фотосессия в "InterContinental" г.Ташкент;{" "}
           <br /> 17:00 - Сбор гостей в ресторане "Osiyo Grand". <br />
         </p>
         <div className="w-full">
-    <Slider {...settings}>
-      <div className="w-full">
-      <img
-          className="w-full h-[350px] object-cover"
-          src="/images/13.png"
-          alt="picture-1"
-        />  
-      </div>
-      <div className="w-full">
-      <img
-          className="w-full h-[350px] object-cover"
-          src="/images/5.png"
-          alt="picture-1"
-        />  
-      </div>
-    </Slider>
-  </div>
+          <Slider {...settings}>
+            <div className="w-full">
+              <img
+                className="w-full h-[350px] object-cover"
+                src="/images/13.png"
+                alt="picture-1"
+              />
+            </div>
+            <div className="w-full">
+              <img
+                className="w-full h-[350px] object-cover"
+                src="/images/5.png"
+                alt="picture-1"
+              />
+            </div>
+          </Slider>
+        </div>
       </AnimatedSection>
       <AnimatedSection
         animation={textLeft}
@@ -176,7 +189,7 @@ export default function About() {
           src="/images/6.png"
           alt="picture-1"
         />
-        <p className="text-sm font-vibes text-center">
+        <p className="text-sm font-vibes text-center w-full">
           {" "}
           <span className="text-m mb-[1px] block mt-[5px] ">
             <b>
@@ -184,15 +197,19 @@ export default function About() {
               Black Tie
             </b>
           </span>{" "}
-          <br />{" "}
-          <span className="text-sm">
-            Мы будем рады, если вы поддержите тематику свадебного дня.
-          </span>{" "}
-          <br /> <b>Леди: </b> <br />
-          Длинные вечерние платья и костюмы, выбор ткани может варьироваться:черный и коричневый. Но главное сохранить изысанность и элегатность 
+          <div className="flex justify-center items-center mt-2 mb-2 ">
+            <span className="w-[30px] h-[30px] bg-orange-300 rounded-full m-0"></span>
+            <span className="w-[30px] h-[30px] bg-yellow-900 rounded-full ml-2 mr-2"></span>
+            <span className="w-[30px] h-[30px] bg-slate-900 rounded-full m-0"></span>
+          </div>
+          <b>Леди: </b> <br />
+          Длинные вечерние платья и костюмы, выбор ткани может
+          варьироваться: <br />черный,коричневый и
+          золотой. Но главное сохранить
+          изысанность и элегатность
           <br />
-          <b>Джентельмены:</b> <br /> Классический костюм/строгий образ в черном
-          или в темно-сине  м цвете.{" "}
+          <b>Джентельмены:</b> <br /> Классический костюм/строгий образ в темных
+          цветах
         </p>
       </AnimatedSection>
     </div>

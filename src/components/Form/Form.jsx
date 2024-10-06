@@ -15,7 +15,7 @@ export default function Form() {
 
     setTimeout(() => {
         window.location.reload()
-    }, 5000);
+    }, 2000);
 
     const message = `
       Имя и Фамилия: ${name}
