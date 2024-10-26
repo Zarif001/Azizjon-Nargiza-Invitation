@@ -50,7 +50,7 @@ export default function Form() {
         <p className="w-[300px] text-m">
           Мы очень старались сделать праздник незабываемым, поэтому будем рады,
           если вы подтвердите свое присутствие до <br />{" "}
-          <span className="underline">20 октября 2024 года</span>
+          <span className="underline">1 ноября 2024 года</span>
         </p>
       </div>
 
