@@ -44,7 +44,7 @@ export default function SimpleSlider() {
               Shaxzodbek <span className="font-vibes">&</span> Husnoza
               </motion.p>
               <motion.div {...textAnimation} className="flex justify-between mt-5">
-              <p className="text-m font-vibes text-white text-center">Sizni Nigoh Oqshomiga</p>
+              <p className="text-m font-vibes text-white text-center">Sizni Nikoh Oqshomiga</p>
               <p className="text-m font-vibes text-white ml-2 text-center">taklif qilamiz</p>
 
               </motion.div>
