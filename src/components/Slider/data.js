@@ -1,4 +1,4 @@
-import bg2 from '/images/1.webp'
+import bg2 from '/images/1.png'
 
 
 export const DATES = [
