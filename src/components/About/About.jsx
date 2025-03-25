@@ -30,7 +30,7 @@ export default function About() {
     <div className="bg-slate-100 pt-24">
       <AnimatedSection>
         <div className="mt-10 flex flex-col justify-center items-center mb-5">
-          <h2 className="text-llg font-vibes mb-10">
+          <h2 className="text-llg font-vibes mb-10 text-center">
             To‘y o‘tkaziladigan joyga qanday borish mumkin
           </h2>
           <p className="text-m font-vibes text-center w-full md:w-[500px] mb-5">
@@ -73,9 +73,9 @@ export default function About() {
               Ресторан в Ташкенте
             </a>
             <iframe
+            className="md:w-[600px] w-full h-[400px]"
               src="https://yandex.uz/map-widget/v1/?ll=69.268633%2C41.293293&mode=search&oid=95863422120&ol=biz&sctx=ZAAAAAgBEAAaKAoSCS%2FAPjp1T1FAEbgCCvX0qURAEhIJ0J1g%2F3VuxD8RGcVyS6shuT8iBgABAgMEBSgKOABAl6AGSAFqAnV6nQHNzMw9oAEAqAEAvQHrWdroggIGb3FzaG9tigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=69.268633%2C41.293293&sspn=0.109782%2C0.067555&text=oqshom&utm_source=share&z=13.58"
-              width={560}
-              height={400}
+             
               frameBorder={1}
               allowFullScreen="true"
               style={{ position: "relative" }}
