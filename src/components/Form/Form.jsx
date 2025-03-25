@@ -14,7 +14,7 @@ export default function Form() {
     event.preventDefault();
 
     setTimeout(() => {
-        window.location.reload()
+      window.location.reload();
     }, 2000);
 
     const message = `
@@ -46,11 +46,11 @@ export default function Form() {
   return (
     <div className="flex flex-col justify-center items-center pt-20 bg-slate-100">
       <div className="text-center font-vibes mb-6">
-        <h1 className="text-llg mb-5">Анкета Гостей</h1>
+        <h1 className="text-llg mb-5">Mehmonlar Anketasi</h1>
         <p className="w-[300px] text-m">
-          Мы очень старались сделать праздник незабываемым, поэтому будем рады,
-          если вы подтвердите свое присутствие до <br />{" "}
-          <span className="underline">1 ноября 2024 года</span>
+          Bayramni unutilmas qilish uchun biz juda harakat qildik, shuning uchun
+          <span className="underline"> 1 may 2025 года</span> ishtirokingizni
+          tasdiqlashingizni iltimos qilamiz.
         </p>
       </div>
 
@@ -59,56 +59,56 @@ export default function Form() {
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 font-vibes"
       >
         <label className="block text-gray-700 text-m font-bold mb-2">
-          Имя и Фамилия:
+          Ism va familiya:
         </label>
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="text-sm mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          placeholder="Введите имя и фамилию"
+          placeholder="Ism va familiya"
           required
         />
         <label className="block text-gray-700 text-m font-bold mb-2">
-          1. Подтвердите свое присутствие:
+          1.Ishtirokingizni tasdiqlang:
         </label>
         <div className="mb-4">
           <label className=" flex items-center">
             <input
               type="radio"
               name="attendance"
-              value="Обязательно буду"
-              checked={attendance === "Обязательно буду"}
+              value="Albatta boraman"
+              checked={attendance === "Albatta boraman"}
               onChange={(e) => setAttendance(e.target.value)}
               className="hidden peer"
             />
             <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
-            <span className="text-gray-700 ml-2 text-sm">Обязательно буду</span>
+            <span className="text-gray-700 ml-2 text-sm">Albatta boraman</span>
           </label>
 
           <label className=" flex items-center">
             <input
               type="radio"
               name="attendance"
-              value="Еще не уверен(а)"
-              checked={attendance === "Еще не уверен(а)"}
+              value="Hali aniq emas"
+              checked={attendance === "Hali aniq emas"}
               onChange={(e) => setAttendance(e.target.value)}
               className="hidden peer"
             />
             <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
-            <span className="text-gray-700 ml-2 text-sm">Еще не уверен(а)</span>
+            <span className="text-gray-700 ml-2 text-sm">Hali aniq emas</span>
           </label>
 
           <label className=" flex items-center">
             <input
               type="radio"
               name="attendance"
-              value="К сожалению, у меня не получится"
-              checked={attendance === "К сожалению, у меня не получится"}
+              value="Afsuski, bora olmayman"
+              checked={attendance === "Afsuski, bora olmayman"}
               onChange={(e) => setAttendance(e.target.value)}
               className="hidden peer"
             />
@@ -116,86 +116,21 @@ export default function Form() {
               <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
             </div>
             <span className="text-gray-700 ml-2 text-sm">
-              К сожалению, у меня не получится
+            Afsuski, bora olmayman
             </span>
-          </label>
-        </div>
-
-        <label className="block text-gray-700 text-m font-bold mb-2">
-          2. Предпочтения в алкоголе:
-        </label>
-        <div className="mb-4">
-          <label className=" flex items-center">
-            <input
-              type="radio"
-              name="alcoholPreference"
-              value="Шампанское"
-              checked={alcoholPreference === "Шампанское"}
-              onChange={(e) => setAlcoholPreference(e.target.value)}
-              className="hidden peer"
-            />
-            <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
-              <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
-            </div>
-            <span className="text-gray-700 ml-2 text-sm">Шампанское</span>
-          </label>
-
-          <label className=" flex items-center">
-            <input
-              type="radio"
-              name="alcoholPreference"
-              value="Вино"
-              checked={alcoholPreference === "Вино"}
-              onChange={(e) => setAlcoholPreference(e.target.value)}
-              className="hidden peer"
-            />
-            <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
-              <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
-            </div>
-            <span className="text-gray-700 ml-2 text-sm">Вино</span>
-          </label>
-
-          <label className=" flex items-center">
-            <input
-              type="radio"
-              name="alcoholPreference"
-              value="Крепкий алкоголь"
-              checked={alcoholPreference === "Крепкий алкоголь"}
-              onChange={(e) => setAlcoholPreference(e.target.value)}
-              className="hidden peer"
-            />
-            <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
-              <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
-            </div>
-            <span className="text-gray-700 ml-2 text-sm">Крепкий алкоголь</span>
-          </label>
-
-          <label className=" flex items-center">
-            <input
-              type="radio"
-              name="alcoholPreference"
-              value="Б/а напитки"
-              checked={alcoholPreference === "Б/а напитки"}
-              onChange={(e) => setAlcoholPreference(e.target.value)}
-              className="hidden peer"
-            />
-            <div className="w-4 h-4 rounded-full border-2 border-orange-400 flex items-center justify-center peer-checked:bg-orange-400 m-0">
-              <div className="w-2 h-2 rounded-full bg-white peer-checked:bg-orange-400"></div>
-            </div>
-            <span className="text-gray-700 ml-2 text-sm">Б/а напитки</span>
           </label>
         </div>
 
         {/* Ваши пожелания */}
         <label className="block text-gray-700 text-m font-bold mb-2">
-          Ваши пожелания:
+        Sizning tilaklaringiz:
         </label>
         <input
           type="text"
           value={comments}
           onChange={(e) => setComments(e.target.value)}
           className=" text-sm mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          placeholder="Ваши пожелания"
+          placeholder="Sizning tilaklaringiz"
           required
         />
 
@@ -203,11 +138,13 @@ export default function Form() {
           type="submit"
           className="text-m bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
-          Отправить
+          Yuborish
         </button>
 
         {isSubmitted && (
-          <p className="text-green-500 mt-4 text-sm">Форма успешно отправлена!</p>
+          <p className="text-green-500 mt-4 text-sm">
+            Forma muvaffaqiyatli yuborildi!
+          </p>
         )}
       </form>
     </div>

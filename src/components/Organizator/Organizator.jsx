@@ -4,9 +4,9 @@ export default function WeddingOrganizer() {
   return (
     <div className="flex flex-col justify-center items-center bg-slate-100 py-10">
       <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 text-center">
-        <h2 className="text-llg font-bold mb-4 font-vibes">Свадебный Организатор</h2>
+        <h2 className="text-llg font-bold mb-4 font-vibes">To‘y Tashkilotchisi</h2>
         <p className="text-gray-700 text-sm mb-4 font-vibes">
-          По всем вопросам Вы можете обращаться к нашему свадебному организатору.
+        Barcha savollar bo‘yicha bizning to‘y tashkilotchimizga murojaat qilishingiz mumkin.
         </p>
         <div className="font-bold  text-llg font-vibes">Юсуф</div>
         <a

@@ -38,14 +38,14 @@ export default function SimpleSlider() {
             <img className="w-full h-full object-cover" src={item.img} alt="" />
             <div  className="absolute inset-0  bg-black bg-opacity-20 flex flex-col justify-center items-center">
               <motion.h1 {...textAnimation}  className="text-white text-xl mb-20 font-SpringBI  text-center flex justify-center items-center w-full">
-                A <span className="m-0 pt-16">N</span>
+                Sh <span className="m-0 pt-16">H</span>
               </motion.h1>            
               <motion.p {...textAnimation} className="text-white text-lg font-SpringBI leading-none text-center">
-                Azizjon <span className="font-vibes">&</span> Nargiza
+              Shaxzodbek <span className="font-vibes">&</span> Husnoza
               </motion.p>
               <motion.div {...textAnimation} className="flex justify-between mt-5">
-              <p className="text-m font-vibes text-white text-center">Приглашаем вас</p>
-              <p className="text-m font-vibes text-white ml-2 text-center">на нашу свадьбу</p>
+              <p className="text-m font-vibes text-white text-center">Sizni Nigoh Oqshomiga</p>
+              <p className="text-m font-vibes text-white ml-2 text-center">taklif qilamiz</p>
 
               </motion.div>
             </div>

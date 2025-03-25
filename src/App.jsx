@@ -3,9 +3,6 @@ import SimpleSlider from "./components/Slider/Slider";
 import Timer from "./components/Timer/Timer";
 import About from "./components/About/About";
 import BackgroundMusic from "./components/BackgroundMusic/BackgroundMusic"; 
-import Location from "./components/Location/Location";
-import Form from "./components/Form/Form";
-import WeddingOrganizer from "./components/Organizator/Organizator";
 
 function App() {
   return (
@@ -14,9 +11,6 @@ function App() {
       <SimpleSlider />
       <Timer />
       <About />
-      <Location/>
-      <Form/>
-      <WeddingOrganizer/>
     </div>
   );
 }
